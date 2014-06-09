@@ -40,3 +40,9 @@ gem 'spring',        group: :development
 
 gem 'ridley'
 gem 'angularjs-rails'
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+end
+gem 'rspec-rails', group: [:development, :test]
